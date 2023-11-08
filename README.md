@@ -8,8 +8,9 @@
 
  <div>
    <a href="https://github.com/Henrike-PB">
-   <img height="170em" src="https://github-readme-stats.vercel.app/api?username=Henrike-PB&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
+   
    <img height="190em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Henrike-PB&layout=compact&langs_count=6&theme=tokyonight"/>
+
 </div>
 
  ### Tecnologias que estou aprendendo:
