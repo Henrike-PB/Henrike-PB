@@ -6,12 +6,18 @@
 
 </img>
 
+[![GitHub Streak](https://streak-stats.demolab.com/?user=Henrike-PB&theme=bear&background=000&border=30A3DC&dates=FFF)](https://git.io/streak-stats)
+
  <div>
    <a href="https://github.com/Henrike-PB">
    
    <img height="190em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Henrike-PB&layout=compact&langs_count=6&theme=tokyonight"/>
 
 </div>
+
+
+ 
+
 
  ### Tecnologias que estou aprendendo:
 <div style="display: inline_block"><br>
