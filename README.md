@@ -6,8 +6,6 @@
 
 </img>
 
-[![GitHub Streak](https://streak-stats.demolab.com/?user=Henrike-PB&theme=bear&background=000&border=30A3DC&dates=FFF)](https://git.io/streak-stats)
-
  <div>
    <a href="https://github.com/Henrike-PB">
    
@@ -51,6 +49,11 @@
 </div>
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=8F0D87&height=120&section=footer"/>
+
+
+[![GitHub Streak](https://streak-stats.demolab.com/?user=Henrike-PB&theme=midnight-purple&background=000&border=30A3DC&dates=FFF)](https://git.io/streak-stats)
+
+
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Henrike-PB/Henrike-PB/output/github-contribution-grid-snake-dark.svg">
