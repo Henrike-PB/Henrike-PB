@@ -25,8 +25,8 @@ Sou um desenvolvedor web full-stack apaixonado por tecnologia e inovação. Conc
 
 #### Geração Caldeira 2024 - Trilha de Programação Python
 - **Geração Caldeira**
-  - Status: Aluno
-  - Descrição: Programa intensivo de formação em programação Python, com ênfase em desenvolvimento de software e análise de dados.
+  - Status: Alumni
+  - Descrição: Programa intensivo de formação em programação Python, com ênfase em análise de dados, machine learning e inteligência artificial.
 
 ---
 
