@@ -1,6 +1,6 @@
 ## Bem-vindo(a) ao meu perfil! 😁
 
-<img align="left" width="300px" height="300px" src="https://github.com/Henrike-PB/Henrike-PB/assets/146462607/cea4949c-adc0-4929-b7ab-7eef3254989d">
+
 
 ### Desenvolvedor Full Stack </>
 
