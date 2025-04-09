@@ -1,3 +1,5 @@
+<img width=100% style="transform: rotate(180deg);" src="https://capsule-render.vercel.app/api?type=waving&color=8F0D87&height=120&section=footer"/>
+
 ## Bem-vindo(a) ao meu perfil! 😁
 
 
