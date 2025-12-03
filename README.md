@@ -2,85 +2,98 @@
 
 ## Bem-vindo(a) ao meu perfil! 😁
 
-
-
-### Desenvolvedor Full Stack </>
+### 🚀 Assistente de Engenharia de Dados | Desenvolvedor Full Stack
 
 ---
 
 ### 🌟 Sobre Mim
-Sou um desenvolvedor web full-stack apaixonado por tecnologia e inovação. Concluí o curso de Desenvolvimento Web pelo Instituto da Oportunidade Social e atualmente estou cursando Análise e Desenvolvimento de Sistemas (ADS) na UNISINOS. Também sou aluno do programa Geração Caldeira 2024 na trilha de programação Python.
+Sou apaixonado por tecnologia e inovação. Comecei minha jornada como Desenvolvedor Full Stack e hoje atuo como **Assistente de Engenharia de Dados na Appmax**, onde me sinto realizado aprendendo e aplicando soluções complexas diariamente.
+
+Concluí o curso de **Desenvolvimento Web pelo Instituto da Oportunidade Social** e estou cursando **Análise e Desenvolvimento de Sistemas (ADS)** na UNISINOS e sou Alumni do programa **Geração Caldeira**. Recentemente, tive a oportunidade incrível de participar da **Python Brasil 2025** com meu time, expandindo ainda mais meus horizontes.
 
 ---
 
-### 🎓 Formação Acadêmica e Cursos
+### 💼 Experiência Profissional Atual
+**Appmax - Assistente de Engenharia de Dados** *(Desde Ago/2025)*
+Atuo no time de Engenharia desenvolvendo e sustentando pipelines de dados e integrações.
+- **ETL/ELT & Big Data:** Criação de rotinas (Spark/PySpark) e orquestração com **Airflow**. Gerenciamento de camadas de dados (Bronze, Silver, Gold).
+- **Cloud (AWS):** Vivência intensa com **S3, EC2, Redshift, Lambda e DynamoDB** (incluindo gestão de TTL e logs).
+- **Integrações & Backend:** Desenvolvimento de integração com a API da **Meta (WhatsApp)**, gestão de templates dinâmicos e funcionalidade de opt-out. Conexão de APIs (Frontend-Backend) utilizando padrão MVC e **Pydantic**.
 
-#### Desenvolvimento Web Full-Stack
-- **Instituto da Oportunidade Social**
-  - Conclusão: 2024
-  - Descrição: Curso focado em desenvolvimento web, abrangendo tecnologias front-end e back-end, incluindo HTML, CSS, JavaScript, PHP e banco de dados com MySQL.
+---
+
+### 🎓 Formação Acadêmica
 
 #### Análise e Desenvolvimento de Sistemas (ADS)
-- **UNISINOS**
-  - Status: Cursando
-  - Descrição: Graduação em ADS, com foco em análise de sistemas, desenvolvimento de software e gestão de projetos de TI.
+- **UNISINOS** | *Cursando*
+- Graduação em ADS, com foco em análise de sistemas, desenvolvimento de software e gestão de projetos de TI.
 
-#### Geração Caldeira 2024 - Trilha de Programação Python
-- **Geração Caldeira**
-  - Status: Alumni
-  - Descrição: Programa intensivo de formação em programação Python, com ênfase em análise de dados, machine learning e inteligência artificial.
+#### Geração Caldeira - Trilha Python
+- **Status:** Alumni
+- Formação intensiva em Python, análise de dados e IA.
 
+#### Desenvolvimento Web Full-Stack
+- **Instituto da Oportunidade Social** | *Concluído 2024*
+- Curso focado em desenvolvimento web, abrangendo tecnologias front-end e back-end, incluindo HTML, CSS, JavaScript, PHP e banco de dados com MySQL.
 ---
 
-### 🚀 Tecnologias que estou aprendendo:
-<div style="display: inline_block"><br>
-  <img align="center" alt="Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-  <img align="center" alt="HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-  <img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-  <img align="center" alt="PHP" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg">
-  <img align="center" alt="Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+### 🚀 Stack de Tecnologias
+
+<br>
+
+**Engenharia de Dados & Cloud:**
+<div style="display: inline_block">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white" />
+  <img src="https://img.shields.io/badge/Apache%20Spark-FDEE21?style=for-the-badge&logo=apachespark&logoColor=black" />
+  <img src="https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white" />
+  <img src="https://img.shields.io/badge/Apache%20Airflow-017CEE?style=for-the-badge&logo=Apache%20Airflow&logoColor=white" />
+</div>
+<br>
+
+**Banco de Dados:**
+<div style="display: inline_block">
+  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Amazon%20Redshift-8C4FFF?style=for-the-badge&logo=amazon-aws&logoColor=white" />
+  <img src="https://img.shields.io/badge/DynamoDB-4053D6?style=for-the-badge&logo=amazon-dynamodb&logoColor=white" />
+  <img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white" />
+</div>
+<br>
+
+**Desenvolvimento Web:**
+<div style="display: inline_block">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
 </div>
 
 ---
 
-### 📊 Análise de Dados:
-Atualmente, estou aprendendo análise de dados e utilizando ferramentas como o Jupyter Notebook para explorar e visualizar dados de maneira eficiente.
-
----
-
-### 🛠️ Ferramentas de Trabalho:
+### 🛠️ Ferramentas
 ![VScode](https://img.shields.io/badge/vscode-4285F4?style=for-the-badge&logo=vscode&logoColor=white)&nbsp;
-![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-orange?style=for-the-badge&logo=jupyter&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-orange?style=for-the-badge&logo=jupyter&logoColor=white)&nbsp;
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
 ---
 
-### 📊 Estatísticas do GitHub:
-<div>
-  <a href="https://github.com/Henrike-PB">
-    <img height="190em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Henrike-PB&layout=compact&langs_count=6&theme=tokyonight"/>
-  </a>
-</div>
-
----
-
-### 📫 Para me contatar, acesse:
+### 📫 Contato
 <div> 
+  <a href="https://www.linkedin.com/in/henrikebraga" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+  <a href="mailto:pajaresbragahenrike@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
   <a href="https://instagram.com/dev_henrike" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
   <a href="https://discord.gg/884956160531234886" target="_blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" target="_blank"></a> 
-  <a href="mailto:pajaresbragahenrike@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-  <a href="https://www.linkedin.com/in/henrikebraga" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
 </div>
 
 ---
 
-### 🔥 GitHub Streak:
+### 🔥 GitHub Streak
 [![GitHub Streak](https://streak-stats.demolab.com/?user=Henrike-PB&theme=midnight-purple&background=000&border=30A3DC&dates=FFF)](https://git.io/streak-stats)
 
 ---
 
-### 🐍 Contribuições:
+### 🐍 Contribuições
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Henrike-PB/Henrike-PB/output/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mari4souza/Henrike-PB/output/github-contribution-grid-snake.svg">
