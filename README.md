@@ -2,23 +2,12 @@
 
 ## Bem-vindo(a) ao meu perfil! 😁
 
-### 🚀 Assistente de Engenharia de Dados | Desenvolvedor Full Stack
-
 ---
 
 ### 🌟 Sobre Mim
-Sou apaixonado por tecnologia e inovação. Comecei minha jornada como Desenvolvedor Full Stack e hoje atuo como **Assistente de Engenharia de Dados na Appmax**, onde me sinto realizado aprendendo e aplicando soluções complexas diariamente.
+Sou apaixonado por tecnologia e inovação. Comecei minha jornada como Desenvolvedor Full Stack e hoje me aventura cada vez mais no mundo da programação e dados.
 
-Concluí o curso de **Desenvolvimento Web pelo Instituto da Oportunidade Social** e estou cursando **Análise e Desenvolvimento de Sistemas (ADS)** na UNISINOS e sou Alumni do programa **Geração Caldeira**. Recentemente, tive a oportunidade incrível de participar da **Python Brasil 2025** com meu time, expandindo ainda mais meus horizontes.
-
----
-
-### 💼 Experiência Profissional Atual
-**Appmax - Assistente de Engenharia de Dados** *(Desde Ago/2025)*
-Atuo no time de Engenharia desenvolvendo e sustentando pipelines de dados e integrações.
-- **ETL/ELT & Big Data:** Criação de rotinas (Spark/PySpark) e orquestração com **Airflow**. Gerenciamento de camadas de dados (Bronze, Silver, Gold).
-- **Cloud (AWS):** Vivência intensa com **S3, EC2, Redshift, Lambda e DynamoDB** (incluindo gestão de TTL e logs).
-- **Integrações & Backend:** Desenvolvimento de integração com a API da **Meta (WhatsApp)**, gestão de templates dinâmicos e funcionalidade de opt-out. Conexão de APIs (Frontend-Backend) utilizando padrão MVC e **Pydantic**.
+Concluí o curso de **Desenvolvimento Web pelo Instituto da Oportunidade Social** e estou cursando **Análise e Desenvolvimento de Sistemas (ADS)** na UNISINOS e sou Alumni do programa **Geração Caldeira**.
 
 ---
 
@@ -80,7 +69,7 @@ Atuo no time de Engenharia desenvolvendo e sustentando pipelines de dados e inte
 
 ### 📫 Contato
 <div> 
-  <a href="https://www.linkedin.com/in/henrikebraga" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+
   <a href="mailto:pajaresbragahenrike@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
   <a href="https://instagram.com/dev_henrike" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
   <a href="https://discord.gg/884956160531234886" target="_blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" target="_blank"></a> 
