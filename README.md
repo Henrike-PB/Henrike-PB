@@ -2,6 +2,12 @@
 
 ## Bem-vindo(a) ao meu perfil! 😁
 
+<p align="center">
+
+  ![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=Henrike-PB.visitor-badge)
+
+</p>
+
 ---
 
 ### 🌟 Sobre Mim
