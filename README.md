@@ -1,4 +1,4 @@
-<img width=100% style="transform: rotate(180deg);" src="https://capsule-render.vercel.app/api?type=waving&color=8F0D87&height=120&section=footer"/>
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=8F0D87&height=120&section=header"/>
 
 ## Bem-vindo(a) ao meu perfil! 😁
 
@@ -11,9 +11,9 @@
 ---
 
 ### 🌟 Sobre Mim
-Sou apaixonado por tecnologia e inovação. Comecei minha jornada como Desenvolvedor Full Stack e hoje me aventura cada vez mais no mundo da programação e dados.
+Sou apaixonado por tecnologia e inovação. Atuo como Engenheiro de Dados, mergulhando cada vez mais no mundo da programação e dos dados.
 
-Concluí o curso de **Desenvolvimento Web pelo Instituto da Oportunidade Social** e estou cursando **Análise e Desenvolvimento de Sistemas (ADS)** na UNISINOS e sou Alumni do programa **Geração Caldeira**.
+Estou cursando **Análise e Desenvolvimento de Sistemas (ADS)** na UNISINOS e sou Alumni do programa **Geração Caldeira** (trilha Python).
 
 ---
 
@@ -24,12 +24,13 @@ Concluí o curso de **Desenvolvimento Web pelo Instituto da Oportunidade Social*
 - Graduação em ADS, com foco em análise de sistemas, desenvolvimento de software e gestão de projetos de TI.
 
 #### Geração Caldeira - Trilha Python
-- **Status:** Alumni
+- **Instituto Caldeira** | *2024 · Alumni*
 - Formação intensiva em Python, análise de dados e IA.
 
 #### Desenvolvimento Web Full-Stack
 - **Instituto da Oportunidade Social** | *Concluído 2024*
 - Curso focado em desenvolvimento web, abrangendo tecnologias front-end e back-end, incluindo HTML, CSS, JavaScript, PHP e banco de dados com MySQL.
+
 ---
 
 ### 🚀 Stack de Tecnologias
@@ -43,6 +44,7 @@ Concluí o curso de **Desenvolvimento Web pelo Instituto da Oportunidade Social*
   <img src="https://img.shields.io/badge/Apache%20Spark-FDEE21?style=for-the-badge&logo=apachespark&logoColor=black" />
   <img src="https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white" />
   <img src="https://img.shields.io/badge/Apache%20Airflow-017CEE?style=for-the-badge&logo=Apache%20Airflow&logoColor=white" />
+  <img src="https://img.shields.io/badge/WhatsApp%20Business%20API-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 </div>
 <br>
 
@@ -53,15 +55,6 @@ Concluí o curso de **Desenvolvimento Web pelo Instituto da Oportunidade Social*
   <img src="https://img.shields.io/badge/DynamoDB-4053D6?style=for-the-badge&logo=amazon-dynamodb&logoColor=white" />
   <img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" />
   <img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white" />
-</div>
-<br>
-
-**Desenvolvimento Web:**
-<div style="display: inline_block">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
 </div>
 
 ---
@@ -74,11 +67,12 @@ Concluí o curso de **Desenvolvimento Web pelo Instituto da Oportunidade Social*
 ---
 
 ### 📫 Contato
-<div> 
+<div>
 
   <a href="mailto:pajaresbragahenrike@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+  <a href="https://www.linkedin.com/in/SEU-USUARIO-AQUI" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
   <a href="https://instagram.com/dev_henrike" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
-  <a href="https://discord.gg/884956160531234886" target="_blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" target="_blank"></a> 
+  <a href="https://discord.gg/884956160531234886" target="_blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" target="_blank"></a>
 </div>
 
 ---
@@ -91,7 +85,7 @@ Concluí o curso de **Desenvolvimento Web pelo Instituto da Oportunidade Social*
 ### 🐍 Contribuições
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Henrike-PB/Henrike-PB/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mari4souza/Henrike-PB/output/github-contribution-grid-snake.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Henrike-PB/Henrike-PB/output/github-contribution-grid-snake.svg">
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Henrike-PB/Henrike-PB/output/github-contribution-grid-snake.svg">
 </picture>
 
