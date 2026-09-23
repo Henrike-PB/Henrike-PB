@@ -1,0 +1,26 @@
+name: henrike_profile DAG
+
+on:
+  schedule:
+    - cron: "0 12 * * *"   # todo dia 09:00 no horario de Brasilia
+  workflow_dispatch:        # permite rodar na mao pela aba Actions
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Atualiza a data dos logs do README
+        run: |
+          TODAY=$(TZ=America/Sao_Paulo date +%F)
+          sed -i -E "s/^\[[0-9]{4}-[0-9]{2}-[0-9]{2} /[$TODAY /" README.md
+
+      - name: Commit se mudou
+        run: |
+          git config user.name "henrike-profile-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git diff --quiet README.md || (git commit -am "chore: dag run $(date +%F)" && git push)
