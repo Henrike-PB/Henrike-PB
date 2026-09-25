@@ -15,12 +15,12 @@
 Atuo nos projetos de dados da Appmax: serviços backend em Python, fluxos orientados a eventos na AWS, integrações com parceiros e LLMs, e a camada de dados que sustenta esses produtos.
 
 ```text
-[2026-09-24 09:00:00] INFO  dag_id=henrike_profile      state=running
-[2026-09-24 09:00:01] INFO  task=extract_experience     "Engenheiro de Dados I · Appmax"
-[2026-09-24 09:00:02] INFO  task=extract_education      "ADS · UNISINOS  |  alumni Geração Caldeira"
-[2026-09-24 09:00:03] INFO  task=transform_skills       [serviços de dados, event-driven, integrações, LLMs]
-[2026-09-24 09:00:04] WARN  task=learning               backlog=5 livros + trilhas  (ver learning_pipeline ↓)
-[2026-09-24 09:00:05] INFO  task=load_career            proximo_passo="pleno"  state=queued
+[2026-09-25 09:00:00] INFO  dag_id=henrike_profile      state=running
+[2026-09-25 09:00:01] INFO  task=extract_experience     "Engenheiro de Dados I · Appmax"
+[2026-09-25 09:00:02] INFO  task=extract_education      "ADS · UNISINOS  |  alumni Geração Caldeira"
+[2026-09-25 09:00:03] INFO  task=transform_skills       [serviços de dados, event-driven, integrações, LLMs]
+[2026-09-25 09:00:04] WARN  task=learning               backlog=5 livros + trilhas  (ver learning_pipeline ↓)
+[2026-09-25 09:00:05] INFO  task=load_career            proximo_passo="pleno"  state=queued
 ```
 
 ## 🔁 Graph view: `carreira`
