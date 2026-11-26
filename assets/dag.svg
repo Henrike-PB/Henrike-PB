@@ -6,7 +6,7 @@
   <rect x="16" y="11" width="12" height="12" rx="3" fill="#017cee"/>
   <rect x="19" y="14" width="6" height="6" rx="1.5" fill="#121a26"/>
   <text x="38" y="21.5" font-size="11"><tspan fill="#7d8896">henrike-pb</tspan><tspan fill="#4b5563">  /  </tspan><tspan fill="#7d8896">dags</tspan><tspan fill="#4b5563">  /  </tspan><tspan fill="#7d8896">stack</tspan><tspan fill="#4b5563">  /  </tspan><tspan fill="#e6edf3">graph</tspan></text>
-  <text x="844" y="21.5" font-size="11" text-anchor="end" fill="#7d8896">2026-11-25</text>
+  <text x="844" y="21.5" font-size="11" text-anchor="end" fill="#7d8896">2026-11-26</text>
 <text x="20" y="54" font-size="11" fill="#7d8896">dag_id=<tspan fill="#e6edf3">stack</tspan>   schedule=<tspan fill="#e6edf3">batch + event-driven</tspan>   owner=<tspan fill="#e6edf3">henrike</tspan></text>
 <path d="M200 91.0 C220.0 91.0 220.0 161.0 240 161.0" fill="none" stroke="#243042" stroke-width="1.6"/>
 <path class="flow" d="M200 91.0 C220.0 91.0 220.0 161.0 240 161.0" fill="none" stroke="#017cee" stroke-width="1.6" stroke-dasharray="4 10"/>

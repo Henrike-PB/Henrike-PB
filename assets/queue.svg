@@ -6,7 +6,7 @@
   <rect x="16" y="11" width="12" height="12" rx="3" fill="#017cee"/>
   <rect x="19" y="14" width="6" height="6" rx="1.5" fill="#121a26"/>
   <text x="38" y="21.5" font-size="11"><tspan fill="#7d8896">henrike-pb</tspan><tspan fill="#4b5563">  /  </tspan><tspan fill="#7d8896">sqs</tspan><tspan fill="#4b5563">  /  </tspan><tspan fill="#7d8896">henrike-projetos</tspan><tspan fill="#4b5563">  /  </tspan><tspan fill="#e6edf3">consumer</tspan></text>
-  <text x="844" y="21.5" font-size="11" text-anchor="end" fill="#7d8896">2026-11-25</text>
+  <text x="844" y="21.5" font-size="11" text-anchor="end" fill="#7d8896">2026-11-26</text>
 <text x="20" y="56" font-size="11" fill="#7d8896">queue=<tspan fill="#e6edf3">henrike-projetos</tspan>   consumer=<tspan fill="#e6edf3">portfolio-consumer</tspan>   arquitetura=<tspan fill="#e6edf3">hexagonal</tspan></text>
 <text x="20" y="120" font-size="10" fill="#4b5563">SQS · henrike-projetos</text>
 <rect x="20" y="129" width="308.6" height="34" rx="17" fill="#0f141c" stroke="#243042"/>
