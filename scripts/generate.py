@@ -568,11 +568,25 @@ def fetch_days() -> dict[dt.date, tuple[int, int]]:
     return fetch_html()
 
 
+def fetch_visitors() -> int | None:
+    """Lê o total do contador da komarev (o README conta as visitas com um pixel invisível)."""
+    url = f"https://komarev.com/ghpvc/?username={LOGIN}&label=x&style=flat-square"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "profile-readme-generator"})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            svg = r.read().decode("utf-8")
+        nums = re.findall(r'<text x="[\d.]+" y="14">([\d,.]+)</text>', svg)
+        return int(re.sub(r"\D", "", nums[-1])) if nums else None
+    except Exception as exc:
+        print(f"contador de visitas indisponível ({exc})", file=sys.stderr)
+        return None
+
+
 MESES = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"]
 DIAS = ["dom", "seg", "ter", "qua", "qui", "sex", "sáb"]
 
 
-def grid_svg(days: dict[dt.date, tuple[int, int]]) -> str:
+def grid_svg(days: dict[dt.date, tuple[int, int]], visitors: int | None = None) -> str:
     end = min(max(days), TODAY)
     days = {k: v for k, v in days.items() if k <= end}
     start = end - dt.timedelta(days=(end.weekday() + 1) % 7) - dt.timedelta(weeks=52)  # domingo, 53 colunas
@@ -597,7 +611,9 @@ def grid_svg(days: dict[dt.date, tuple[int, int]]) -> str:
         f'   runs=<tspan fill="{C["text"]}">{len(weeks)} semanas</tspan>'
         f'   total=<tspan fill="{C["success"]}">{total}</tspan>'
         f'   dias_ativos=<tspan fill="{C["text"]}">{active}</tspan>'
-        f'   melhor_dia=<tspan fill="{C["text"]}">{best[0].strftime("%d/%m/%Y")} ({best[1]})</tspan></text>'
+        f'   melhor_dia=<tspan fill="{C["text"]}">{best[0].strftime("%d/%m/%Y")} ({best[1]})</tspan>'
+        + (f'   visitantes=<tspan fill="{C["blue"]}">{visitors}</tspan>' if visitors is not None else "")
+        + "</text>"
     ]
 
     # barras de "duração" no topo = total da semana, como no grid view do Airflow
@@ -672,7 +688,7 @@ def main() -> None:
     (ASSETS / "queue.svg").write_text(queue_svg(len(PROFILE["projects"])), encoding="utf-8")
     for proj in PROFILE["projects"]:
         (ASSETS / f"project-{proj['repo']}.svg").write_text(project_svg(proj), encoding="utf-8")
-    (ASSETS / "grid.svg").write_text(grid_svg(fetch_days()), encoding="utf-8")
+    (ASSETS / "grid.svg").write_text(grid_svg(fetch_days(), fetch_visitors()), encoding="utf-8")
     print("ok: assets/hello.svg, assets/details.svg, assets/query.svg, assets/dag.svg, assets/build.svg, assets/queue.svg, assets/project-*.svg, assets/grid.svg")
 
 
