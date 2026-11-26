@@ -7,7 +7,7 @@
   <rect x="19" y="14" width="6" height="6" rx="1.5" fill="#121a26"/>
   <text x="38" y="21.5" font-size="11"><tspan fill="#7d8896">henrike-pb</tspan><tspan fill="#4b5563">  /  </tspan><tspan fill="#7d8896">dags</tspan><tspan fill="#4b5563">  /  </tspan><tspan fill="#7d8896">contribuicoes</tspan><tspan fill="#4b5563">  /  </tspan><tspan fill="#e6edf3">grid</tspan></text>
   <text x="844" y="21.5" font-size="11" text-anchor="end" fill="#7d8896">2026-11-25</text>
-<text x="20" y="56" font-size="11" fill="#7d8896">dag_id=<tspan fill="#e6edf3">contribuicoes</tspan>   runs=<tspan fill="#e6edf3">53 semanas</tspan>   total=<tspan fill="#2ea043">255</tspan>   dias_ativos=<tspan fill="#e6edf3">52</tspan>   melhor_dia=<tspan fill="#e6edf3">09/11/2026 (35)</tspan>   visitantes=<tspan fill="#017cee">53</tspan></text>
+<text x="20" y="56" font-size="11" fill="#7d8896">dag_id=<tspan fill="#e6edf3">contribuicoes</tspan>   runs=<tspan fill="#e6edf3">53 semanas</tspan>   total=<tspan fill="#2ea043">256</tspan>   dias_ativos=<tspan fill="#e6edf3">52</tspan>   melhor_dia=<tspan fill="#e6edf3">09/11/2026 (35)</tspan>   visitantes=<tspan fill="#017cee">53</tspan></text>
 <text x="20" y="106" font-size="9" fill="#4b5563">semana</text>
 <rect class="bar" style="animation-delay:0.000s" x="92" y="106" width="11" height="2" rx="2" fill="#2ea043" opacity="1"><title>semana de 23/11: 2</title></rect>
 <rect class="bar" style="animation-delay:0.012s" x="106" y="106" width="11" height="2" rx="2" fill="#2ea043" opacity="1"><title>semana de 30/11: 1</title></rect>
@@ -61,7 +61,7 @@
 <rect class="bar" style="animation-delay:0.588s" x="778" y="98" width="11" height="10" rx="2" fill="#2ea043" opacity="1"><title>semana de 01/11: 12</title></rect>
 <rect class="bar" style="animation-delay:0.600s" x="792" y="74" width="11" height="34" rx="2" fill="#2ea043" opacity="1"><title>semana de 08/11: 40</title></rect>
 <rect class="bar" style="animation-delay:0.612s" x="806" y="106" width="11" height="2" rx="2" fill="#4b5563" opacity="0.5"><title>semana de 15/11: 0</title></rect>
-<rect class="bar pulse" style="animation-delay:0.624s" x="820" y="97" width="11" height="11" rx="2" fill="#a3e635" opacity="1"><title>semana de 22/11: 13</title></rect>
+<rect class="bar pulse" style="animation-delay:0.624s" x="820" y="96" width="11" height="12" rx="2" fill="#a3e635" opacity="1"><title>semana de 22/11: 14</title></rect>
 <text x="120" y="123" font-size="9.5" fill="#7d8896">dez</text>
 <text x="176" y="123" font-size="9.5" fill="#7d8896">jan</text>
 <text x="232" y="123" font-size="9.5" fill="#7d8896">fev</text>
@@ -448,7 +448,7 @@
 <rect class="cell" style="animation-delay:0.624s" x="820" y="130" width="11" height="11" rx="2.5" fill="#16632f"><title>22/11/2026: 10</title></rect>
 <rect class="cell" style="animation-delay:0.624s" x="820" y="144" width="11" height="11" rx="2.5" fill="#151c27"><title>23/11/2026: 0</title></rect>
 <rect class="cell" style="animation-delay:0.624s" x="820" y="158" width="11" height="11" rx="2.5" fill="#151c27"><title>24/11/2026: 0</title></rect>
-<rect class="cell pulse" style="animation-delay:0.624s" x="820" y="172" width="11" height="11" rx="2.5" fill="#0f3b24" stroke="#a3e635" stroke-width="1.5"><title>25/11/2026: 3</title></rect>
+<rect class="cell pulse" style="animation-delay:0.624s" x="820" y="172" width="11" height="11" rx="2.5" fill="#0f3b24" stroke="#a3e635" stroke-width="1.5"><title>25/11/2026: 4</title></rect>
 <text x="20" y="250" font-size="10" fill="#4b5563">barras = total da semana · quadrados = contribuições do dia · atualiza todo dia</text>
 <text x="653" y="250" font-size="10" fill="#7d8896" text-anchor="end">menos</text>
 <rect x="661" y="241" width="11" height="11" rx="2.5" fill="#151c27"/>
