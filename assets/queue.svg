@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="234.352" viewBox="0 0 860 234.352" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace">
+  <style>@keyframes go{0%{transform:translateX(0);opacity:0}12%{opacity:1}82%{opacity:1}100%{transform:translateX(262.6px);opacity:0}}.msg{animation:go 3.6s linear infinite both}@keyframes flow{to{stroke-dashoffset:-24}}.flow{animation:flow 1s linear infinite}</style>
+  <rect x="0.5" y="0.5" width="859" height="233.352" rx="12" fill="#0a0e14" stroke="#243042"/>
+  <path d="M0.5 12.5 a12 12 0 0 1 12 -12 h835 a12 12 0 0 1 12 12 v21.5 h-859 z" fill="#121a26"/>
+  <line x1="0.5" y1="34" x2="859.5" y2="34" stroke="#243042"/>
+  <rect x="16" y="11" width="12" height="12" rx="3" fill="#017cee"/>
+  <rect x="19" y="14" width="6" height="6" rx="1.5" fill="#121a26"/>
+  <text x="38" y="21.5" font-size="11"><tspan fill="#7d8896">henrike-pb</tspan><tspan fill="#4b5563">  /  </tspan><tspan fill="#7d8896">sqs</tspan><tspan fill="#4b5563">  /  </tspan><tspan fill="#7d8896">henrike-projetos</tspan><tspan fill="#4b5563">  /  </tspan><tspan fill="#e6edf3">consumer</tspan></text>
+  <text x="844" y="21.5" font-size="11" text-anchor="end" fill="#7d8896">2026-11-25</text>
+<text x="20" y="56" font-size="11" fill="#7d8896">queue=<tspan fill="#e6edf3">henrike-projetos</tspan>   consumer=<tspan fill="#e6edf3">portfolio-consumer</tspan>   arquitetura=<tspan fill="#e6edf3">hexagonal</tspan></text>
+<text x="20" y="120" font-size="10" fill="#4b5563">SQS · henrike-projetos</text>
+<rect x="20" y="129" width="308.6" height="34" rx="17" fill="#0f141c" stroke="#243042"/>
+<g class="msg" style="animation-delay:0.0s"><rect x="34" y="137" width="30" height="18" rx="3" fill="#121a26" stroke="#017cee"/><path d="M34 137 L49 147 L64 137" fill="none" stroke="#017cee"/></g>
+<g class="msg" style="animation-delay:1.2s"><rect x="34" y="137" width="30" height="18" rx="3" fill="#121a26" stroke="#017cee"/><path d="M34 137 L49 147 L64 137" fill="none" stroke="#017cee"/></g>
+<g class="msg" style="animation-delay:2.4s"><rect x="34" y="137" width="30" height="18" rx="3" fill="#121a26" stroke="#017cee"/><path d="M34 137 L49 147 L64 137" fill="none" stroke="#017cee"/></g>
+<path class="flow" d="M328.6 146 L368.6 146" stroke="#017cee" stroke-width="1.6" stroke-dasharray="4 8"/>
+<text x="20" y="186" font-size="10" fill="#4b5563">DLQ · <tspan fill="#2ea043">0 mensagens</tspan></text>
+<polygon points="542.0,146.0 506.0,208.4 434.0,208.4 398.0,146.0 434.0,83.6 506.0,83.6" fill="#0f141c" stroke="#2ea043" stroke-width="1.5"/>
+<text x="470" y="120" font-size="12" font-weight="700" fill="#e6edf3" text-anchor="middle">domínio</text>
+<text x="470" y="178" font-size="10.5" fill="#7d8896" text-anchor="middle">Projeto</text>
+<rect x="368.6" y="137" width="59" height="18" rx="4" fill="#121a26" stroke="#5ec8f2"/><text x="398" y="149.5" font-size="10" fill="#5ec8f2" text-anchor="middle">in: sqs</text>
+<rect x="499.8" y="137" width="84" height="18" rx="4" fill="#121a26" stroke="#5ec8f2"/><text x="542" y="149.5" font-size="10" fill="#5ec8f2" text-anchor="middle">out: github</text>
+<path class="flow" d="M584.2 146 L624.2 146" stroke="#017cee" stroke-width="1.6" stroke-dasharray="4 8"/>
+<rect x="624.2" y="121" width="215.79999999999995" height="50" rx="8" fill="#0f141c" stroke="#243042"/>
+<rect x="624.2" y="121" width="4" height="50" rx="2" fill="#2ea043"/>
+<text x="638.2" y="142" font-size="12" font-weight="700" fill="#e6edf3">github.com/Henrike-PB</text>
+<text x="638.2" y="159" font-size="10" fill="#7d8896">3 projetos publicados ↓</text>
+</svg>

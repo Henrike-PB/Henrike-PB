@@ -25,10 +25,6 @@
       [
         "voluntário",
         "GT de Programação · COMQ"
-      ],
-      [
-        "fora do código",
-        "jiu-jitsu · HQs · fotografia"
       ]
     ],
     "right": [
@@ -334,6 +330,65 @@
         "testes",
         "unitário e integração com moto"
       ]
+    ]
+  },
+  "projects": [
+    {
+      "repo": "versioned-serving-layer",
+      "desc": "Carga versionada no PostgreSQL com quality gate e troca atômica: quem lê nunca vê tabela pela metade.",
+      "stack": [
+        "Python",
+        "PostgreSQL 16",
+        "Docker",
+        "LocalStack",
+        "pytest",
+        "mypy strict",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "repo": "offtape",
+      "desc": "Playlist do Spotify no pen drive do carro: acha cada música no YouTube, baixa em MP3 e retoma o que faltou.",
+      "stack": [
+        "Python",
+        "Flask",
+        "Spotify API",
+        "yt-dlp",
+        "SQLite"
+      ]
+    },
+    {
+      "repo": "flight-reservation-crud",
+      "desc": "API REST de reserva de voos com regras de capacidade e integridade entre voo, avião e cliente.",
+      "stack": [
+        "Django 5.2",
+        "DRF",
+        "PostgreSQL 15",
+        "Docker Compose"
+      ]
+    }
+  ],
+  "hello": {
+    "whoami": "Henrike Pajares Braga · engenheiro de dados",
+    "sobre": [
+      "entusiasta de tecnologia e inovação",
+      "conectado com a filosofia do jiu-jitsu",
+      "apreciador de arte: HQs e música"
+    ],
+    "legenda": "em memória dos meus grandes amigos",
+    "pets": [
+      {
+        "nome": "Dunga",
+        "arquivo": "dunga.json"
+      },
+      {
+        "nome": "Riana",
+        "arquivo": "riana.json"
+      }
+    ],
+    "amigos": [
+      "Dunga e Riana, meus grandes amigos.",
+      "descansem em paz."
     ]
   }
 }

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="178" viewBox="0 0 860 178" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace">
+  <style></style>
+  <rect x="0.5" y="0.5" width="859" height="177" rx="12" fill="#0a0e14" stroke="#243042"/>
+  <path d="M0.5 12.5 a12 12 0 0 1 12 -12 h835 a12 12 0 0 1 12 12 v21.5 h-859 z" fill="#121a26"/>
+  <line x1="0.5" y1="34" x2="859.5" y2="34" stroke="#243042"/>
+  <rect x="16" y="11" width="12" height="12" rx="3" fill="#017cee"/>
+  <rect x="19" y="14" width="6" height="6" rx="1.5" fill="#121a26"/>
+  <text x="38" y="21.5" font-size="11"><tspan fill="#7d8896">henrike-pb</tspan><tspan fill="#4b5563">  /  </tspan><tspan fill="#7d8896">sqs</tspan><tspan fill="#4b5563">  /  </tspan><tspan fill="#7d8896">henrike-projetos</tspan><tspan fill="#4b5563">  /  </tspan><tspan fill="#e6edf3">receive</tspan></text>
+  <text x="844" y="21.5" font-size="11" text-anchor="end" fill="#7d8896">2026-11-25</text>
+<text x="20" y="58" font-size="11" fill="#7d8896">MessageId <tspan fill="#e6edf3">8df61958-e168-e97b</tspan>   ReceiveCount <tspan fill="#e6edf3">1</tspan></text>
+<text x="840" y="58" font-size="11" fill="#7d8896" text-anchor="end">abrir no GitHub ↗</text>
+<rect x="674" y="45" width="36" height="18" rx="9" fill="none" stroke="#2ea043"/><text x="691.9" y="57.5" font-size="10.5" fill="#2ea043" text-anchor="middle">ACK</text>
+<text x="20" y="84" font-size="11.5" xml:space="preserve" style="white-space:pre"><tspan fill="#7d8896">{</tspan></text>
+<text x="20" y="102" font-size="11.5" xml:space="preserve" style="white-space:pre">  <tspan fill="#5ec8f2">"repo"</tspan><tspan fill="#7d8896">: </tspan><tspan fill="#2ea043" font-weight="700">"versioned-serving-layer"</tspan><tspan fill="#7d8896">,</tspan></text>
+<text x="20" y="120" font-size="11.5" xml:space="preserve" style="white-space:pre">  <tspan fill="#5ec8f2">"faz"</tspan><tspan fill="#7d8896">: </tspan><tspan fill="#a5d6ff">"Carga versionada no PostgreSQL com quality gate e troca atômica: quem lê nunca vê tabela pela metade."</tspan><tspan fill="#7d8896">,</tspan></text>
+<text x="20" y="138" font-size="11.5" xml:space="preserve" style="white-space:pre">  <tspan fill="#5ec8f2">"stack"</tspan><tspan fill="#7d8896">: [</tspan><tspan fill="#a5d6ff">"Python", "PostgreSQL 16", "Docker", "LocalStack", "pytest", "mypy strict", "GitHub Actions"</tspan><tspan fill="#7d8896">]</tspan></text>
+<text x="20" y="156" font-size="11.5" xml:space="preserve" style="white-space:pre"><tspan fill="#7d8896">}</tspan></text>
+</svg>

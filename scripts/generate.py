@@ -84,6 +84,145 @@ def chip(x: float, y: float, label: str, state: str) -> str:
     ), w
 
 
+# -------------------------------------------------------------------------- hello
+GOLD = "#e3b341"
+PIXEL = 3.6
+OVERLAP = 40
+
+
+def _portrait(art: dict, name: str, ax: float, base_y: float, t0: float, uid: str, occlude: bool = False) -> tuple[list[str], float]:
+    """Retrato estilo imagem no terminal (catimg/chafa): blocos coloridos, impressos linha a linha."""
+    grid = art["px"]
+    ps = PIXEL
+    ay = base_y - len(grid) * ps
+    out = []
+    for i, row in enumerate(grid):
+        y = ay + i * ps
+        parts = []
+        filled = [j for j, c in enumerate(row) if c]
+        if occlude and filled:  # tapa quem está atrás
+            parts.append(f'<rect x="{ax + filled[0] * ps:.1f}" y="{y:.1f}" width="{(filled[-1] - filled[0] + 1) * ps:.1f}" height="{ps:.2f}" fill="{C["bg"]}"/>')
+        j = 0
+        while j < len(row):
+            c = row[j]
+            if not c:
+                j += 1; continue
+            k = j
+            while k + 1 < len(row) and row[k + 1] == c:
+                k += 1
+            parts.append(f'<rect x="{ax + j * ps:.1f}" y="{y:.1f}" width="{(k - j + 1) * ps:.1f}" height="{ps - 0.45:.2f}" fill="{c}"/>')
+            j = k + 1
+        line = "".join(parts)
+        out.append(line if STATIC else
+                   f'<g opacity="0"><set attributeName="opacity" to="1" begin="{t0 + i * 0.018:.3f}s" fill="freeze"/>{line}</g>')
+    top = next(i for i, r in enumerate(grid) if any(r))
+    band = [j for i in range(top, min(top + 4, len(grid))) for j, c in enumerate(grid[i]) if c]
+    hx = ax + (min(band) + max(band) + 1) / 2 * ps
+    hy = ay + top * ps - 12
+    halo = (f'<g class="halo" filter="url(#glow)"><ellipse cx="{hx:.1f}" cy="{hy:.1f}" rx="30" ry="6" fill="none" '
+            f'stroke="{GOLD}" stroke-width="2.4"/></g>')
+    sparks = "".join(
+        f'<text class="spark" style="animation-delay:{k * 0.45 + (0.2 if uid == "b" else 0):.2f}s" x="{hx + dx:.1f}" y="{hy + dy:.1f}" font-size="10" fill="{GOLD}">*</text>'
+        for k, (dx, dy) in enumerate([(-44, -3), (38, -9), (-34, 11), (42, 9)])
+    )
+    t_halo = t0 + len(grid) * 0.018 + 0.15
+    out.append(halo + sparks if STATIC else
+               f'<g opacity="0"><set attributeName="opacity" to="1" begin="{t_halo:.2f}s" fill="freeze"/>{halo}{sparks}</g>')
+    width = len(grid[0]) * ps
+    out.append(f'<text x="{ax + width / 2:.1f}" y="{base_y + 16:.1f}" font-size="11.5" font-weight="700" fill="{GOLD}" text-anchor="middle">{escape(name)}</text>')
+    return out, t_halo
+
+
+def hello_svg() -> str:
+    h = PROFILE["hello"]
+    body = [
+        '<defs><filter id="glow" x="-50%" y="-50%" width="200%" height="200%">'
+        '<feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>'
+        "</filter></defs>"
+    ]
+    pets = [(p_["nome"], json.loads((ROOT / "data" / p_["arquivo"]).read_text(encoding="utf-8"))) for p_ in h["pets"]]
+    tallest = max(len(a_["px"]) for _, a_ in pets) * PIXEL
+    base_y = 66 + 18 + tallest
+    # posições: o segundo encosta no primeiro com sobreposição; quem vem antes fica na frente
+    xs, ax = [], 18
+    for _, art in pets:
+        xs.append(ax)
+        ax += len(art["px"][0]) * PIXEL - OVERLAP
+    right_edge = xs[-1] + len(pets[-1][1]["px"][0]) * PIXEL
+    for k in reversed(range(len(pets))):  # desenha de trás pra frente
+        name, art = pets[k]
+        part, _ = _portrait(art, name, xs[k], base_y, 0.2 + k * 0.4, "ab"[k % 2], occlude=k < len(pets) - 1)
+        body += part
+    y_cap = base_y + 38
+    body.append(f'<text x="{(18 + right_edge) / 2:.1f}" y="{y_cap:.0f}" font-size="11" fill="{C["muted"]}" text-anchor="middle">{escape(h["legenda"])} <tspan fill="#f85149">♥</tspan></text>')
+    divider_x = right_edge + 12
+
+    # terminal à direita
+    tx, step = divider_x + 22, 21
+    n_lines = 4 + len(h["sobre"]) + len(h["amigos"])
+    ty = int(62 + max(0, (y_cap - 62 - n_lines * step) / 2))
+    prompt = f'<tspan fill="{C["success"]}">henrike</tspan> <tspan fill="{C["blue"]}">~</tspan> <tspan fill="{C["muted"]}">%</tspan> '
+    seq = []  # (tipo, conteúdo)
+    seq.append(("cmd", "whoami"))
+    seq.append(("out", f'<tspan fill="{C["text"]}">{escape(h["whoami"])}</tspan>'))
+    seq.append(("cmd", "cat sobre.txt"))
+    for item in h["sobre"]:
+        seq.append(("out", f'<tspan fill="{C["cyan"]}">›</tspan> <tspan fill="{C["text"]}">{escape(item)}</tspan>'))
+    seq.append(("cmd", "cat amigos.txt"))
+    for linha in h["amigos"]:
+        seq.append(("out", f'<tspan fill="{GOLD}">{escape(linha)}</tspan>'))
+    t = 0.6
+    for i, (kind, content) in enumerate(seq):
+        y = ty + i * step
+        if kind == "cmd":
+            text = prompt + f'<tspan fill="{C["text"]}">{escape(content)}</tspan>'
+            if STATIC:
+                body.append(f'<text x="{tx}" y="{y}" font-size="12">{text}</text>')
+            else:
+                pw = 13 * 7.3  # "henrike ~ % "
+                full = pw + len(content) * 7.3 + 6
+                dur = 0.06 * len(content) + 0.05
+                body.append(
+                    f'<clipPath id="c{i}"><rect x="{tx}" y="{y - 14}" width="{pw:.0f}" height="20">'
+                    f'<animate attributeName="width" from="{pw:.0f}" to="{full:.0f}" begin="{t:.2f}s" dur="{dur:.2f}s" fill="freeze"/>'
+                    "</rect></clipPath>"
+                )
+                body.append(
+                    f'<g opacity="0"><set attributeName="opacity" to="1" begin="{t - 0.25:.2f}s" fill="freeze"/>'
+                    f'<text x="{tx}" y="{y}" font-size="12" clip-path="url(#c{i})">{text}</text></g>'
+                )
+                t += dur + 0.25
+        else:
+            if STATIC:
+                body.append(f'<text x="{tx}" y="{y}" font-size="12">{content}</text>')
+            else:
+                body.append(
+                    f'<g opacity="0"><set attributeName="opacity" to="1" begin="{t:.2f}s" fill="freeze"/>'
+                    f'<text x="{tx}" y="{y}" font-size="12">{content}</text></g>'
+                )
+                t += 0.18
+    y_last = ty + len(seq) * step
+    cursor = f'<rect class="cursor" x="{tx + 13 * 7.3:.0f}" y="{y_last - 11}" width="7.5" height="14" fill="{C["text"]}"/>'
+    if STATIC:
+        body.append(f'<text x="{tx}" y="{y_last}" font-size="12">{prompt}</text>{cursor}')
+    else:
+        body.append(
+            f'<g opacity="0"><set attributeName="opacity" to="1" begin="{t:.2f}s" fill="freeze"/>'
+            f'<text x="{tx}" y="{y_last}" font-size="12">{prompt}</text>{cursor}</g>'
+        )
+    body.append(f'<line x1="{divider_x:.0f}" y1="48" x2="{divider_x:.0f}" y2="{y_cap:.0f}" stroke="{C["border"]}" stroke-dasharray="2 4"/>')
+    height = max(y_cap, y_last) + 22
+    style = (
+        "@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}"
+        ".halo{animation:bob 2.6s ease-in-out infinite}"
+        "@keyframes tw{0%,100%{opacity:0}50%{opacity:1}}"
+        ".spark{animation:tw 1.8s ease-in-out infinite both}"
+        "@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}"
+        ".cursor{animation:blink 1s steps(1) infinite}"
+    )
+    return frame(height, ["henrike-pb", "~", "zsh"], "\n".join(body), style)
+
+
 # ------------------------------------------------------------------------ details
 def details_svg() -> str:
     d = PROFILE["details"]
@@ -285,6 +424,95 @@ def build_svg() -> str:
     return frame(y_end + 28, ["henrike-pb", "dbt", "build"], "\n".join(body), style)
 
 
+# ----------------------------------------------------------------------- projects
+QUEUE = "henrike-projetos"
+
+
+def queue_svg(n_msgs: int) -> str:
+    """Fila -> consumer hexagonal -> GitHub, com as mensagens andando pela fila."""
+    cx, cy, r = 470, 146, 72
+    hexa = " ".join(
+        f"{cx + dx:.1f},{cy + dy:.1f}"
+        for dx, dy in [(r, 0), (r / 2, r * 0.866), (-r / 2, r * 0.866), (-r, 0), (-r / 2, -r * 0.866), (r / 2, -r * 0.866)]
+    )
+    port_w = {"in: sqs": 7 * 6.4 + 14, "out: github": 11 * 6.4 + 14}
+    tube_x0, tube_x1 = 20, cx - r - port_w["in: sqs"] / 2 - 40
+    body = [
+        f'<text x="20" y="56" font-size="11" fill="{C["muted"]}">queue=<tspan fill="{C["text"]}">{QUEUE}</tspan>'
+        f'   consumer=<tspan fill="{C["text"]}">portfolio-consumer</tspan>'
+        f'   arquitetura=<tspan fill="{C["text"]}">hexagonal</tspan></text>',
+        # fila
+        f'<text x="{tube_x0}" y="{cy - 26}" font-size="10" fill="{C["dim"]}">SQS · {QUEUE}</text>',
+        f'<rect x="{tube_x0}" y="{cy - 17}" width="{tube_x1 - tube_x0}" height="34" rx="17" fill="{C["panel"]}" stroke="{C["border"]}"/>',
+    ]
+    for i in range(n_msgs):
+        if STATIC:
+            x = tube_x0 + 24 + i * 70
+            cls, style = "", ""
+        else:
+            x = tube_x0 + 14
+            cls, style = ' class="msg"', f' style="animation-delay:{i * 1.2:.1f}s"'
+        body.append(
+            f'<g{cls}{style}><rect x="{x}" y="{cy - 9}" width="30" height="18" rx="3" fill="{C["bar"]}" stroke="{C["blue"]}"/>'
+            f'<path d="M{x} {cy - 9} L{x + 15} {cy + 1} L{x + 30} {cy - 9}" fill="none" stroke="{C["blue"]}"/></g>'
+        )
+    # seta fila -> porta de entrada
+    body.append(f'<path class="flow" d="M{tube_x1} {cy} L{cx - r - port_w["in: sqs"] / 2:.1f} {cy}" stroke="{C["blue"]}" stroke-width="1.6" stroke-dasharray="4 8"/>')
+    # DLQ
+    body.append(f'<text x="{tube_x0}" y="{cy + 40}" font-size="10" fill="{C["dim"]}">DLQ · <tspan fill="{C["success"]}">0 mensagens</tspan></text>')
+    # hexágono
+    body.append(f'<polygon points="{hexa}" fill="{C["panel"]}" stroke="{C["success"]}" stroke-width="1.5"/>')
+    body.append(f'<text x="{cx}" y="{cy - 26}" font-size="12" font-weight="700" fill="{C["text"]}" text-anchor="middle">domínio</text>')
+    body.append(f'<text x="{cx}" y="{cy + 32}" font-size="10.5" fill="{C["muted"]}" text-anchor="middle">Projeto</text>')
+    for label, px in [("in: sqs", cx - r), ("out: github", cx + r)]:
+        w = port_w[label]
+        body.append(
+            f'<rect x="{px - w / 2:.1f}" y="{cy - 9}" width="{w:.0f}" height="18" rx="4" fill="{C["bar"]}" stroke="{C["cyan"]}"/>'
+            f'<text x="{px}" y="{cy + 3.5}" font-size="10" fill="{C["cyan"]}" text-anchor="middle">{label}</text>'
+        )
+    # saída -> GitHub
+    gx = cx + r + port_w["out: github"] / 2 + 40
+    body.append(f'<path class="flow" d="M{cx + r + port_w["out: github"] / 2:.1f} {cy} L{gx} {cy}" stroke="{C["blue"]}" stroke-width="1.6" stroke-dasharray="4 8"/>')
+    body.append(f'<rect x="{gx}" y="{cy - 25}" width="{W - 20 - gx}" height="50" rx="8" fill="{C["panel"]}" stroke="{C["border"]}"/>')
+    body.append(f'<rect x="{gx}" y="{cy - 25}" width="4" height="50" rx="2" fill="{C["success"]}"/>')
+    body.append(f'<text x="{gx + 14}" y="{cy - 4}" font-size="12" font-weight="700" fill="{C["text"]}">github.com/{LOGIN}</text>')
+    body.append(f'<text x="{gx + 14}" y="{cy + 13}" font-size="10" fill="{C["muted"]}">{n_msgs} projetos publicados ↓</text>')
+    style = (
+        "@keyframes go{0%{transform:translateX(0);opacity:0}12%{opacity:1}82%{opacity:1}100%"
+        f"{{transform:translateX({tube_x1 - tube_x0 - 46}px);opacity:0}}}}"
+        ".msg{animation:go 3.6s linear infinite both}"
+        "@keyframes flow{to{stroke-dashoffset:-24}}"
+        ".flow{animation:flow 1s linear infinite}"
+    )
+    return frame(cy + r * 0.866 + 26, ["henrike-pb", "sqs", QUEUE, "consumer"], "\n".join(body), style)
+
+
+def project_svg(proj: dict) -> str:
+    import hashlib
+
+    h = hashlib.sha1(proj["repo"].encode()).hexdigest()
+    msg_id = f"{h[:8]}-{h[8:12]}-{h[12:16]}"
+    key, s_ = C["cyan"], "#a5d6ff"
+    body = [
+        f'<text x="20" y="58" font-size="11" fill="{C["muted"]}">MessageId <tspan fill="{C["text"]}">{msg_id}</tspan>'
+        f'   ReceiveCount <tspan fill="{C["text"]}">1</tspan></text>',
+        f'<text x="{W - 20}" y="58" font-size="11" fill="{C["muted"]}" text-anchor="end">abrir no GitHub ↗</text>',
+    ]
+    svg, _ = chip(W - 186, 45, "ACK", "success")
+    body.append(svg)
+    stack = ", ".join(f'"{escape(t)}"' for t in proj["stack"])
+    lines = [
+        f'<tspan fill="{C["muted"]}">{{</tspan>',
+        f'  <tspan fill="{key}">"repo"</tspan><tspan fill="{C["muted"]}">: </tspan><tspan fill="{C["success"]}" font-weight="700">"{escape(proj["repo"])}"</tspan><tspan fill="{C["muted"]}">,</tspan>',
+        f'  <tspan fill="{key}">"faz"</tspan><tspan fill="{C["muted"]}">: </tspan><tspan fill="{s_}">"{escape(proj["desc"])}"</tspan><tspan fill="{C["muted"]}">,</tspan>',
+        f'  <tspan fill="{key}">"stack"</tspan><tspan fill="{C["muted"]}">: [</tspan><tspan fill="{s_}">{stack}</tspan><tspan fill="{C["muted"]}">]</tspan>',
+        f'<tspan fill="{C["muted"]}">}}</tspan>',
+    ]
+    for i, ln in enumerate(lines):
+        body.append(f'<text x="20" y="{84 + i * 18}" font-size="11.5" xml:space="preserve" style="white-space:pre">{ln}</text>')
+    return frame(84 + 4 * 18 + 22, ["henrike-pb", "sqs", QUEUE, "receive"], "\n".join(body))
+
+
 # --------------------------------------------------------------------------- grid
 GQL = """query($login:String!){user(login:$login){contributionsCollection{contributionCalendar{
 weeks{contributionDays{date contributionCount contributionLevel}}}}}}"""
@@ -436,12 +664,16 @@ def grid_svg(days: dict[dt.date, tuple[int, int]]) -> str:
 
 def main() -> None:
     ASSETS.mkdir(exist_ok=True)
+    (ASSETS / "hello.svg").write_text(hello_svg(), encoding="utf-8")
     (ASSETS / "details.svg").write_text(details_svg(), encoding="utf-8")
     (ASSETS / "query.svg").write_text(query_svg(), encoding="utf-8")
     (ASSETS / "dag.svg").write_text(dag_svg(), encoding="utf-8")
     (ASSETS / "build.svg").write_text(build_svg(), encoding="utf-8")
+    (ASSETS / "queue.svg").write_text(queue_svg(len(PROFILE["projects"])), encoding="utf-8")
+    for proj in PROFILE["projects"]:
+        (ASSETS / f"project-{proj['repo']}.svg").write_text(project_svg(proj), encoding="utf-8")
     (ASSETS / "grid.svg").write_text(grid_svg(fetch_days()), encoding="utf-8")
-    print("ok: assets/details.svg, assets/query.svg, assets/dag.svg, assets/build.svg, assets/grid.svg")
+    print("ok: assets/hello.svg, assets/details.svg, assets/query.svg, assets/dag.svg, assets/build.svg, assets/queue.svg, assets/project-*.svg, assets/grid.svg")
 
 
 if __name__ == "__main__":
