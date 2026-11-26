@@ -27,4 +27,6 @@
 
 [LinkedIn](https://www.linkedin.com/in/henrikebraga/) · [Portfólio](https://henrike-pb.github.io) · [E-mail](mailto:pajaresbragahenrike@gmail.com)
 
+<img src="https://komarev.com/ghpvc/?username=Henrike-PB&label=visitantes%20processados&color=017CEE&style=flat-square" alt="visitantes processados" />
+
 </div>
