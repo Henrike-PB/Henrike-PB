@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="300" viewBox="0 0 860 300" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace">
+  <style>@keyframes in{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}.node{animation:in .4s ease-out both}@keyframes flow{to{stroke-dashoffset:-28}}.flow{animation:flow 1.1s linear infinite}</style>
+  <rect x="0.5" y="0.5" width="859" height="299" rx="12" fill="#0a0e14" stroke="#243042"/>
+  <path d="M0.5 12.5 a12 12 0 0 1 12 -12 h835 a12 12 0 0 1 12 12 v21.5 h-859 z" fill="#121a26"/>
+  <line x1="0.5" y1="34" x2="859.5" y2="34" stroke="#243042"/>
+  <rect x="16" y="11" width="12" height="12" rx="3" fill="#017cee"/>
+  <rect x="19" y="14" width="6" height="6" rx="1.5" fill="#121a26"/>
+  <text x="38" y="21.5" font-size="11"><tspan fill="#7d8896">henrike-pb</tspan><tspan fill="#4b5563">  /  </tspan><tspan fill="#7d8896">dags</tspan><tspan fill="#4b5563">  /  </tspan><tspan fill="#7d8896">stack</tspan><tspan fill="#4b5563">  /  </tspan><tspan fill="#e6edf3">graph</tspan></text>
+  <text x="844" y="21.5" font-size="11" text-anchor="end" fill="#7d8896">2026-11-25</text>
+<text x="20" y="54" font-size="11" fill="#7d8896">dag_id=<tspan fill="#e6edf3">stack</tspan>   schedule=<tspan fill="#e6edf3">batch + event-driven</tspan>   owner=<tspan fill="#e6edf3">henrike</tspan></text>
+<path d="M200 91.0 C220.0 91.0 220.0 161.0 240 161.0" fill="none" stroke="#243042" stroke-width="1.6"/>
+<path class="flow" d="M200 91.0 C220.0 91.0 220.0 161.0 240 161.0" fill="none" stroke="#017cee" stroke-width="1.6" stroke-dasharray="4 10"/>
+<circle cx="240" cy="161.0" r="2.5" fill="#017cee"/>
+<path d="M200 161.0 C220.0 161.0 220.0 161.0 240 161.0" fill="none" stroke="#243042" stroke-width="1.6"/>
+<path class="flow" d="M200 161.0 C220.0 161.0 220.0 161.0 240 161.0" fill="none" stroke="#017cee" stroke-width="1.6" stroke-dasharray="4 10"/>
+<circle cx="240" cy="161.0" r="2.5" fill="#017cee"/>
+<path d="M200 231.0 C220.0 231.0 220.0 161.0 240 161.0" fill="none" stroke="#243042" stroke-width="1.6"/>
+<path class="flow" d="M200 231.0 C220.0 231.0 220.0 161.0 240 161.0" fill="none" stroke="#017cee" stroke-width="1.6" stroke-dasharray="4 10"/>
+<circle cx="240" cy="161.0" r="2.5" fill="#017cee"/>
+<path d="M420 161.0 C440.0 161.0 440.0 161.0 460 161.0" fill="none" stroke="#243042" stroke-width="1.6"/>
+<path class="flow" d="M420 161.0 C440.0 161.0 440.0 161.0 460 161.0" fill="none" stroke="#017cee" stroke-width="1.6" stroke-dasharray="4 10"/>
+<circle cx="460" cy="161.0" r="2.5" fill="#017cee"/>
+<path d="M640 161.0 C654.0 161.0 654.0 111.0 668 111.0" fill="none" stroke="#243042" stroke-width="1.6"/>
+<path class="flow" d="M640 161.0 C654.0 161.0 654.0 111.0 668 111.0" fill="none" stroke="#017cee" stroke-width="1.6" stroke-dasharray="4 10"/>
+<circle cx="668" cy="111.0" r="2.5" fill="#017cee"/>
+<path d="M640 161.0 C654.0 161.0 654.0 211.0 668 211.0" fill="none" stroke="#243042" stroke-width="1.6"/>
+<path class="flow" d="M640 161.0 C654.0 161.0 654.0 211.0 668 211.0" fill="none" stroke="#017cee" stroke-width="1.6" stroke-dasharray="4 10"/>
+<circle cx="668" cy="211.0" r="2.5" fill="#017cee"/>
+<g class="node" style="animation-delay:0.10s">
+<rect x="20" y="66" width="180" height="50" rx="8" fill="#0f141c" stroke="#243042"/>
+<rect x="20" y="66" width="4" height="50" rx="2" fill="#2ea043"/>
+<text x="34" y="87" font-size="12" font-weight="700" fill="#e6edf3">consumir_eventos</text>
+<text x="34" y="104" font-size="10" fill="#7d8896">SQS · SNS · EventBridge</text>
+</g>
+<g class="node" style="animation-delay:0.18s">
+<rect x="20" y="136" width="180" height="50" rx="8" fill="#0f141c" stroke="#243042"/>
+<rect x="20" y="136" width="4" height="50" rx="2" fill="#2ea043"/>
+<text x="34" y="157" font-size="12" font-weight="700" fill="#e6edf3">replicar_cdc</text>
+<text x="34" y="174" font-size="10" fill="#7d8896">PeerDB → ClickHouse</text>
+</g>
+<g class="node" style="animation-delay:0.26s">
+<rect x="20" y="206" width="180" height="50" rx="8" fill="#0f141c" stroke="#243042"/>
+<rect x="20" y="206" width="4" height="50" rx="2" fill="#2ea043"/>
+<text x="34" y="227" font-size="12" font-weight="700" fill="#e6edf3">ler_data_lake</text>
+<text x="34" y="244" font-size="10" fill="#7d8896">S3 · Parquet · EMR</text>
+</g>
+<g class="node" style="animation-delay:0.34s">
+<rect x="240" y="136" width="180" height="50" rx="8" fill="#0f141c" stroke="#243042"/>
+<rect x="240" y="136" width="4" height="50" rx="2" fill="#2ea043"/>
+<text x="254" y="157" font-size="12" font-weight="700" fill="#e6edf3">transformar</text>
+<text x="254" y="174" font-size="10" fill="#7d8896">dbt · SQL · PySpark</text>
+</g>
+<g class="node" style="animation-delay:0.42s">
+<rect x="460" y="136" width="180" height="50" rx="8" fill="#0f141c" stroke="#243042"/>
+<rect x="460" y="136" width="4" height="50" rx="2" fill="#2ea043"/>
+<text x="474" y="157" font-size="12" font-weight="700" fill="#e6edf3">orquestrar</text>
+<text x="474" y="174" font-size="10" fill="#7d8896">Airflow 3 · Lambda</text>
+</g>
+<g class="node" style="animation-delay:0.50s">
+<rect x="668" y="86" width="172" height="50" rx="8" fill="#0f141c" stroke="#243042"/>
+<rect x="668" y="86" width="4" height="50" rx="2" fill="#2ea043"/>
+<text x="682" y="107" font-size="12" font-weight="700" fill="#e6edf3">publicar_eventos</text>
+<text x="682" y="124" font-size="10" fill="#7d8896">RabbitMQ · SQS · SNS</text>
+</g>
+<g class="node" style="animation-delay:0.58s">
+<rect x="668" y="186" width="172" height="50" rx="8" fill="#0f141c" stroke="#243042"/>
+<rect x="668" y="186" width="4" height="50" rx="2" fill="#2ea043"/>
+<text x="682" y="207" font-size="12" font-weight="700" fill="#e6edf3">servir_api</text>
+<text x="682" y="224" font-size="10" fill="#7d8896">FastAPI · PG · Redis</text>
+</g>
+<line x1="20" y1="266" x2="840" y2="266" stroke="#243042"/>
+<text x="20" y="284" font-size="11" xml:space="preserve" style="white-space:pre"><tspan fill="#5ec8f2">ship</tspan><tspan fill="#4b5563"> │ </tspan><tspan fill="#e6edf3">Terraform · Docker · GitLab CI · Trivy</tspan>     <tspan fill="#5ec8f2">obs</tspan><tspan fill="#4b5563"> │ </tspan><tspan fill="#e6edf3">CloudWatch</tspan></text>
+</svg>

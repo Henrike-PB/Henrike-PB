@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="414" viewBox="0 0 860 414" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace">
+  <style>@keyframes in{from{opacity:0;transform:translateX(-4px)}to{opacity:1;transform:none}}.row{animation:in .35s ease-out both}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}.pulse{animation:in .35s ease-out both,pulse 1.8s ease-in-out 1.6s infinite}</style>
+  <rect x="0.5" y="0.5" width="859" height="413" rx="12" fill="#0a0e14" stroke="#243042"/>
+  <path d="M0.5 12.5 a12 12 0 0 1 12 -12 h835 a12 12 0 0 1 12 12 v21.5 h-859 z" fill="#121a26"/>
+  <line x1="0.5" y1="34" x2="859.5" y2="34" stroke="#243042"/>
+  <rect x="16" y="11" width="12" height="12" rx="3" fill="#017cee"/>
+  <rect x="19" y="14" width="6" height="6" rx="1.5" fill="#121a26"/>
+  <text x="38" y="21.5" font-size="11"><tspan fill="#7d8896">henrike-pb</tspan><tspan fill="#4b5563">  /  </tspan><tspan fill="#7d8896">dbt</tspan><tspan fill="#4b5563">  /  </tspan><tspan fill="#e6edf3">build</tspan></text>
+  <text x="844" y="21.5" font-size="11" text-anchor="end" fill="#7d8896">2026-11-25</text>
+<text x="20" y="54" font-size="11" fill="#7d8896">Running 14 models: <tspan fill="#2ea043">OK</tspan> = o que eu faço no trabalho · <tspan fill="#a3e635">RUN</tspan> = o que estou estudando</text>
+<g class="row" style="animation-delay:0.10s">
+<text x="20" y="84" font-size="11" fill="#4b5563">01 of 14</text>
+<text x="92" y="84" font-size="12" font-weight="700" fill="#2ea043">OK</text>
+<text x="136" y="84" font-size="12" fill="#e6edf3">etls_pyspark_e_redshift</text>
+<line x1="312" y1="80" x2="658" y2="80" stroke="#4b5563" stroke-dasharray="1 5"/>
+<text x="840" y="84" font-size="11" fill="#5ec8f2" text-anchor="end">[PySpark · EMR · Redshift]</text>
+</g>
+<g class="row" style="animation-delay:0.19s">
+<text x="20" y="105" font-size="11" fill="#4b5563">02 of 14</text>
+<text x="92" y="105" font-size="12" font-weight="700" fill="#2ea043">OK</text>
+<text x="136" y="105" font-size="12" fill="#e6edf3">app_interno_full_stack</text>
+<line x1="305" y1="101" x2="678" y2="101" stroke="#4b5563" stroke-dasharray="1 5"/>
+<text x="840" y="105" font-size="11" fill="#5ec8f2" text-anchor="end">[FastAPI · React · RDS]</text>
+</g>
+<g class="row" style="animation-delay:0.28s">
+<text x="20" y="126" font-size="11" fill="#4b5563">03 of 14</text>
+<text x="92" y="126" font-size="12" font-weight="700" fill="#2ea043">OK</text>
+<text x="136" y="126" font-size="12" fill="#e6edf3">etl_redshift_para_clickhouse</text>
+<line x1="348" y1="122" x2="711" y2="122" stroke="#4b5563" stroke-dasharray="1 5"/>
+<text x="840" y="126" font-size="11" fill="#5ec8f2" text-anchor="end">[dbt · ClickHouse]</text>
+</g>
+<g class="row" style="animation-delay:0.37s">
+<text x="20" y="147" font-size="11" fill="#4b5563">04 of 14</text>
+<text x="92" y="147" font-size="12" font-weight="700" fill="#2ea043">OK</text>
+<text x="136" y="147" font-size="12" fill="#e6edf3">dags_airflow_2_para_3</text>
+<line x1="298" y1="143" x2="757" y2="143" stroke="#4b5563" stroke-dasharray="1 5"/>
+<text x="840" y="147" font-size="11" fill="#5ec8f2" text-anchor="end">[Airflow 3]</text>
+</g>
+<g class="row" style="animation-delay:0.46s">
+<text x="20" y="168" font-size="11" fill="#4b5563">05 of 14</text>
+<text x="92" y="168" font-size="12" font-weight="700" fill="#2ea043">OK</text>
+<text x="136" y="168" font-size="12" fill="#e6edf3">lambdas_orientadas_a_eventos</text>
+<line x1="348" y1="164" x2="698" y2="164" stroke="#4b5563" stroke-dasharray="1 5"/>
+<text x="840" y="168" font-size="11" fill="#5ec8f2" text-anchor="end">[Lambda · SQS · SNS]</text>
+</g>
+<g class="row" style="animation-delay:0.55s">
+<text x="20" y="189" font-size="11" fill="#4b5563">06 of 14</text>
+<text x="92" y="189" font-size="12" font-weight="700" fill="#2ea043">OK</text>
+<text x="136" y="189" font-size="12" fill="#e6edf3">servicos_python_hexagonais</text>
+<line x1="334" y1="185" x2="658" y2="185" stroke="#4b5563" stroke-dasharray="1 5"/>
+<text x="840" y="189" font-size="11" fill="#5ec8f2" text-anchor="end">[Pydantic · pytest · mypy]</text>
+</g>
+<g class="row" style="animation-delay:0.64s">
+<text x="20" y="210" font-size="11" fill="#4b5563">07 of 14</text>
+<text x="92" y="210" font-size="12" font-weight="700" fill="#2ea043">OK</text>
+<text x="136" y="210" font-size="12" fill="#e6edf3">migrations_no_ci</text>
+<line x1="262" y1="206" x2="684" y2="206" stroke="#4b5563" stroke-dasharray="1 5"/>
+<text x="840" y="210" font-size="11" fill="#5ec8f2" text-anchor="end">[Alembic · PostgreSQL]</text>
+</g>
+<g class="row" style="animation-delay:0.73s">
+<text x="20" y="231" font-size="11" fill="#4b5563">08 of 14</text>
+<text x="92" y="231" font-size="12" font-weight="700" fill="#2ea043">OK</text>
+<text x="136" y="231" font-size="12" fill="#e6edf3">publicacao_em_filas_com_dlq</text>
+<line x1="341" y1="227" x2="724" y2="227" stroke="#4b5563" stroke-dasharray="1 5"/>
+<text x="840" y="231" font-size="11" fill="#5ec8f2" text-anchor="end">[RabbitMQ · SQS]</text>
+</g>
+<g class="row" style="animation-delay:0.82s">
+<text x="20" y="252" font-size="11" fill="#4b5563">09 of 14</text>
+<text x="92" y="252" font-size="12" font-weight="700" fill="#2ea043">OK</text>
+<text x="136" y="252" font-size="12" fill="#e6edf3">integracao_whatsapp_business</text>
+<line x1="348" y1="248" x2="704" y2="248" stroke="#4b5563" stroke-dasharray="1 5"/>
+<text x="840" y="252" font-size="11" fill="#5ec8f2" text-anchor="end">[Graph API · Flows]</text>
+</g>
+<g class="row" style="animation-delay:0.91s">
+<text x="20" y="273" font-size="11" fill="#4b5563">10 of 14</text>
+<text x="92" y="273" font-size="12" font-weight="700" fill="#2ea043">OK</text>
+<text x="136" y="273" font-size="12" fill="#e6edf3">infra_e_ci_com_gate_de_cves</text>
+<line x1="341" y1="269" x2="625" y2="269" stroke="#4b5563" stroke-dasharray="1 5"/>
+<text x="840" y="273" font-size="11" fill="#5ec8f2" text-anchor="end">[Terraform · GitLab CI · Trivy]</text>
+</g>
+<g class="row" style="animation-delay:1.00s">
+<text x="20" y="294" font-size="11" fill="#4b5563">11 of 14</text>
+<text x="92" y="294" font-size="12" font-weight="700" fill="#2ea043">OK</text>
+<text x="136" y="294" font-size="12" fill="#e6edf3">logs_sem_dado_pessoal</text>
+<line x1="298" y1="290" x2="751" y2="290" stroke="#4b5563" stroke-dasharray="1 5"/>
+<text x="840" y="294" font-size="11" fill="#5ec8f2" text-anchor="end">[CloudWatch]</text>
+</g>
+<g class="row" style="animation-delay:1.09s">
+<text x="20" y="315" font-size="11" fill="#4b5563">12 of 14</text>
+<text x="92" y="315" font-size="12" font-weight="700" fill="#2ea043">OK</text>
+<text x="136" y="315" font-size="12" fill="#e6edf3">adrs_e_post_mortems</text>
+<line x1="283" y1="311" x2="790" y2="311" stroke="#4b5563" stroke-dasharray="1 5"/>
+<text x="840" y="315" font-size="11" fill="#5ec8f2" text-anchor="end">[docs]</text>
+</g>
+<g class="row pulse" style="animation-delay:1.18s">
+<text x="20" y="336" font-size="11" fill="#4b5563">13 of 14</text>
+<text x="92" y="336" font-size="12" font-weight="700" fill="#a3e635">RUN</text>
+<text x="136" y="336" font-size="12" fill="#e6edf3">fundamentos_de_eng_de_dados</text>
+<line x1="341" y1="332" x2="784" y2="332" stroke="#4b5563" stroke-dasharray="1 5"/>
+<text x="840" y="336" font-size="11" fill="#5ec8f2" text-anchor="end">[livro]</text>
+</g>
+<g class="row pulse" style="animation-delay:1.27s">
+<text x="20" y="357" font-size="11" fill="#4b5563">14 of 14</text>
+<text x="92" y="357" font-size="12" font-weight="700" fill="#a3e635">RUN</text>
+<text x="136" y="357" font-size="12" fill="#e6edf3">trilha_dbt_clickhouse</text>
+<line x1="298" y1="353" x2="691" y2="353" stroke="#4b5563" stroke-dasharray="1 5"/>
+<text x="840" y="357" font-size="11" fill="#5ec8f2" text-anchor="end">[lab local em Docker]</text>
+</g>
+<line x1="20" y1="378" x2="840" y2="378" stroke="#243042"/>
+<text x="20" y="398" font-size="11" fill="#7d8896" xml:space="preserve" style="white-space:pre">Done. <tspan fill="#2ea043">PASS=12</tspan>  <tspan fill="#a3e635">RUN=2</tspan>  <tspan fill="#e6edf3">ERROR=0</tspan>  SKIP=0</text>
+</svg>

@@ -1,0 +1,339 @@
+{
+  "login": "Henrike-PB",
+  "details": {
+    "left": [
+      [
+        "nome",
+        "Henrike Pajares Braga"
+      ],
+      [
+        "cargo",
+        "Engenheiro de Dados I @ Appmax"
+      ],
+      [
+        "onde",
+        "Santa Maria, RS"
+      ],
+      [
+        "formação",
+        "ADS · UNISINOS (2024–2027)"
+      ],
+      [
+        "lendo",
+        "Fundamentos de Eng. de Dados"
+      ],
+      [
+        "voluntário",
+        "GT de Programação · COMQ"
+      ],
+      [
+        "fora do código",
+        "jiu-jitsu · HQs · fotografia"
+      ]
+    ],
+    "right": [
+      [
+        "linguagens",
+        "Python · SQL"
+      ],
+      [
+        "dados",
+        "Airflow 3 · dbt · ClickHouse · PySpark"
+      ],
+      [
+        "backend",
+        "FastAPI · Pydantic · SQLAlchemy · Alembic"
+      ],
+      [
+        "bancos",
+        "PostgreSQL · Redshift · Redis · DynamoDB"
+      ],
+      [
+        "mensageria",
+        "SQS · SNS · RabbitMQ"
+      ],
+      [
+        "integração",
+        "WhatsApp Business API · webhooks"
+      ],
+      [
+        "qualidade",
+        "pytest · mypy strict · Ruff"
+      ]
+    ],
+    "runs": [
+      [
+        "2023",
+        "IOS · web full stack",
+        "success"
+      ],
+      [
+        "2024",
+        "Geração Caldeira",
+        "success"
+      ],
+      [
+        "2025",
+        "assistente de dados",
+        "success"
+      ],
+      [
+        "2026",
+        "eng. de dados I",
+        "running"
+      ]
+    ]
+  },
+  "dag": {
+    "nodes": [
+      {
+        "id": "consumir_eventos",
+        "x": 20,
+        "y": 66,
+        "w": 180,
+        "sub": "SQS · SNS · EventBridge"
+      },
+      {
+        "id": "replicar_cdc",
+        "x": 20,
+        "y": 136,
+        "w": 180,
+        "sub": "PeerDB → ClickHouse"
+      },
+      {
+        "id": "ler_data_lake",
+        "x": 20,
+        "y": 206,
+        "w": 180,
+        "sub": "S3 · Parquet · EMR"
+      },
+      {
+        "id": "transformar",
+        "x": 240,
+        "y": 136,
+        "w": 180,
+        "sub": "dbt · SQL · PySpark"
+      },
+      {
+        "id": "orquestrar",
+        "x": 460,
+        "y": 136,
+        "w": 180,
+        "sub": "Airflow 3 · Lambda"
+      },
+      {
+        "id": "publicar_eventos",
+        "x": 668,
+        "y": 86,
+        "w": 172,
+        "sub": "RabbitMQ · SQS · SNS"
+      },
+      {
+        "id": "servir_api",
+        "x": 668,
+        "y": 186,
+        "w": 172,
+        "sub": "FastAPI · PG · Redis"
+      }
+    ],
+    "edges": [
+      [
+        "consumir_eventos",
+        "transformar"
+      ],
+      [
+        "replicar_cdc",
+        "transformar"
+      ],
+      [
+        "ler_data_lake",
+        "transformar"
+      ],
+      [
+        "transformar",
+        "orquestrar"
+      ],
+      [
+        "orquestrar",
+        "publicar_eventos"
+      ],
+      [
+        "orquestrar",
+        "servir_api"
+      ]
+    ],
+    "footer": [
+      [
+        "ship",
+        "Terraform · Docker · GitLab CI · Trivy"
+      ],
+      [
+        "obs",
+        "CloudWatch"
+      ]
+    ]
+  },
+  "build": {
+    "rows": [
+      [
+        "OK",
+        "etls_pyspark_e_redshift",
+        "PySpark · EMR · Redshift"
+      ],
+      [
+        "OK",
+        "app_interno_full_stack",
+        "FastAPI · React · RDS"
+      ],
+      [
+        "OK",
+        "etl_redshift_para_clickhouse",
+        "dbt · ClickHouse"
+      ],
+      [
+        "OK",
+        "dags_airflow_2_para_3",
+        "Airflow 3"
+      ],
+      [
+        "OK",
+        "lambdas_orientadas_a_eventos",
+        "Lambda · SQS · SNS"
+      ],
+      [
+        "OK",
+        "servicos_python_hexagonais",
+        "Pydantic · pytest · mypy"
+      ],
+      [
+        "OK",
+        "migrations_no_ci",
+        "Alembic · PostgreSQL"
+      ],
+      [
+        "OK",
+        "publicacao_em_filas_com_dlq",
+        "RabbitMQ · SQS"
+      ],
+      [
+        "OK",
+        "integracao_whatsapp_business",
+        "Graph API · Flows"
+      ],
+      [
+        "OK",
+        "infra_e_ci_com_gate_de_cves",
+        "Terraform · GitLab CI · Trivy"
+      ],
+      [
+        "OK",
+        "logs_sem_dado_pessoal",
+        "CloudWatch"
+      ],
+      [
+        "OK",
+        "adrs_e_post_mortems",
+        "docs"
+      ],
+      [
+        "RUN",
+        "fundamentos_de_eng_de_dados",
+        "livro"
+      ],
+      [
+        "RUN",
+        "trilha_dbt_clickhouse",
+        "lab local em Docker"
+      ]
+    ]
+  },
+  "query": {
+    "rows": [
+      [
+        "Python",
+        "linguagem",
+        "Lambdas, serviços e DAGs"
+      ],
+      [
+        "SQL",
+        "linguagem",
+        "modelos, análises e investigação"
+      ],
+      [
+        "Lambda",
+        "compute",
+        "processamento orientado a eventos"
+      ],
+      [
+        "SQS · SNS",
+        "mensageria",
+        "filas, fan-out e DLQ"
+      ],
+      [
+        "RabbitMQ",
+        "mensageria",
+        "publicação a partir das DAGs"
+      ],
+      [
+        "S3",
+        "storage",
+        "data lake e troca entre sistemas"
+      ],
+      [
+        "DynamoDB",
+        "banco",
+        "configuração e estado das integrações"
+      ],
+      [
+        "PostgreSQL",
+        "banco",
+        "serviços, com migrations no Alembic"
+      ],
+      [
+        "Redis",
+        "cache",
+        "cache e controle de envio"
+      ],
+      [
+        "ClickHouse",
+        "warehouse",
+        "modelos analíticos e tabelas de CDC"
+      ],
+      [
+        "Redshift",
+        "warehouse",
+        "legado, em migração pro ClickHouse"
+      ],
+      [
+        "dbt",
+        "transformação",
+        "modelos SQL no ClickHouse"
+      ],
+      [
+        "Airflow 3",
+        "orquestração",
+        "DAGs batch e cargas agendadas"
+      ],
+      [
+        "Terraform",
+        "IaC",
+        "Lambdas, filas, IAM e alarmes"
+      ],
+      [
+        "GitLab CI",
+        "CI/CD",
+        "build, testes e gate do Trivy"
+      ],
+      [
+        "CloudWatch",
+        "observação",
+        "logs, métricas e investigação"
+      ],
+      [
+        "pytest",
+        "testes",
+        "unitário e integração com moto"
+      ]
+    ]
+  }
+}

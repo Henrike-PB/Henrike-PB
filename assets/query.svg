@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="520" viewBox="0 0 860 520" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace">
+  <style>@keyframes in{from{opacity:0}to{opacity:1}}.row{animation:in .3s ease-out both}</style>
+  <rect x="0.5" y="0.5" width="859" height="519" rx="12" fill="#0a0e14" stroke="#243042"/>
+  <path d="M0.5 12.5 a12 12 0 0 1 12 -12 h835 a12 12 0 0 1 12 12 v21.5 h-859 z" fill="#121a26"/>
+  <line x1="0.5" y1="34" x2="859.5" y2="34" stroke="#243042"/>
+  <rect x="16" y="11" width="12" height="12" rx="3" fill="#017cee"/>
+  <rect x="19" y="14" width="6" height="6" rx="1.5" fill="#121a26"/>
+  <text x="38" y="21.5" font-size="11"><tspan fill="#7d8896">henrike-pb</tspan><tspan fill="#4b5563">  /  </tspan><tspan fill="#7d8896">clickhouse</tspan><tspan fill="#4b5563">  /  </tspan><tspan fill="#e6edf3">henrike.stack</tspan></text>
+  <text x="844" y="21.5" font-size="11" text-anchor="end" fill="#7d8896">2026-11-25</text>
+<text x="20" y="56" font-size="12" fill="#7d8896"><tspan fill="#a3e635">:)</tspan> <tspan fill="#017cee">SELECT</tspan> <tspan fill="#e6edf3">stack, camada, uso</tspan> <tspan fill="#017cee">FROM</tspan> <tspan fill="#e6edf3">henrike.stack</tspan> <tspan fill="#017cee">WHERE</tspan> <tspan fill="#e6edf3">frequencia = </tspan><tspan fill="#5ec8f2">'diária'</tspan></text>
+<rect x="20" y="74" width="820" height="406" rx="6" fill="#0f141c" stroke="#243042"/>
+<line x1="20" y1="100" x2="840" y2="100" stroke="#243042"/>
+<line x1="196" y1="74" x2="196" y2="480" stroke="#243042"/>
+<line x1="356" y1="74" x2="356" y2="480" stroke="#243042"/>
+<text x="34" y="91" font-size="11.5" font-weight="700" fill="#5ec8f2">stack</text>
+<text x="210" y="91" font-size="11.5" font-weight="700" fill="#5ec8f2">camada</text>
+<text x="370" y="91" font-size="11.5" font-weight="700" fill="#5ec8f2">uso</text>
+<g class="row" style="animation-delay:0.10s">
+<text x="34" y="119" font-size="12" font-weight="700" fill="#e6edf3">Python</text>
+<text x="210" y="119" font-size="12" font-weight="400" fill="#7d8896">linguagem</text>
+<text x="370" y="119" font-size="12" font-weight="400" fill="#e6edf3">Lambdas, serviços e DAGs</text>
+</g>
+<g class="row" style="animation-delay:0.15s">
+<rect x="21" y="126" width="818" height="22" fill="#121a26" opacity=".55"/>
+<text x="34" y="141" font-size="12" font-weight="700" fill="#e6edf3">SQL</text>
+<text x="210" y="141" font-size="12" font-weight="400" fill="#7d8896">linguagem</text>
+<text x="370" y="141" font-size="12" font-weight="400" fill="#e6edf3">modelos, análises e investigação</text>
+</g>
+<g class="row" style="animation-delay:0.20s">
+<text x="34" y="163" font-size="12" font-weight="700" fill="#e6edf3">Lambda</text>
+<text x="210" y="163" font-size="12" font-weight="400" fill="#7d8896">compute</text>
+<text x="370" y="163" font-size="12" font-weight="400" fill="#e6edf3">processamento orientado a eventos</text>
+</g>
+<g class="row" style="animation-delay:0.25s">
+<rect x="21" y="170" width="818" height="22" fill="#121a26" opacity=".55"/>
+<text x="34" y="185" font-size="12" font-weight="700" fill="#e6edf3">SQS · SNS</text>
+<text x="210" y="185" font-size="12" font-weight="400" fill="#7d8896">mensageria</text>
+<text x="370" y="185" font-size="12" font-weight="400" fill="#e6edf3">filas, fan-out e DLQ</text>
+</g>
+<g class="row" style="animation-delay:0.30s">
+<text x="34" y="207" font-size="12" font-weight="700" fill="#e6edf3">RabbitMQ</text>
+<text x="210" y="207" font-size="12" font-weight="400" fill="#7d8896">mensageria</text>
+<text x="370" y="207" font-size="12" font-weight="400" fill="#e6edf3">publicação a partir das DAGs</text>
+</g>
+<g class="row" style="animation-delay:0.35s">
+<rect x="21" y="214" width="818" height="22" fill="#121a26" opacity=".55"/>
+<text x="34" y="229" font-size="12" font-weight="700" fill="#e6edf3">S3</text>
+<text x="210" y="229" font-size="12" font-weight="400" fill="#7d8896">storage</text>
+<text x="370" y="229" font-size="12" font-weight="400" fill="#e6edf3">data lake e troca entre sistemas</text>
+</g>
+<g class="row" style="animation-delay:0.40s">
+<text x="34" y="251" font-size="12" font-weight="700" fill="#e6edf3">DynamoDB</text>
+<text x="210" y="251" font-size="12" font-weight="400" fill="#7d8896">banco</text>
+<text x="370" y="251" font-size="12" font-weight="400" fill="#e6edf3">configuração e estado das integrações</text>
+</g>
+<g class="row" style="animation-delay:0.45s">
+<rect x="21" y="258" width="818" height="22" fill="#121a26" opacity=".55"/>
+<text x="34" y="273" font-size="12" font-weight="700" fill="#e6edf3">PostgreSQL</text>
+<text x="210" y="273" font-size="12" font-weight="400" fill="#7d8896">banco</text>
+<text x="370" y="273" font-size="12" font-weight="400" fill="#e6edf3">serviços, com migrations no Alembic</text>
+</g>
+<g class="row" style="animation-delay:0.50s">
+<text x="34" y="295" font-size="12" font-weight="700" fill="#e6edf3">Redis</text>
+<text x="210" y="295" font-size="12" font-weight="400" fill="#7d8896">cache</text>
+<text x="370" y="295" font-size="12" font-weight="400" fill="#e6edf3">cache e controle de envio</text>
+</g>
+<g class="row" style="animation-delay:0.55s">
+<rect x="21" y="302" width="818" height="22" fill="#121a26" opacity=".55"/>
+<text x="34" y="317" font-size="12" font-weight="700" fill="#e6edf3">ClickHouse</text>
+<text x="210" y="317" font-size="12" font-weight="400" fill="#7d8896">warehouse</text>
+<text x="370" y="317" font-size="12" font-weight="400" fill="#e6edf3">modelos analíticos e tabelas de CDC</text>
+</g>
+<g class="row" style="animation-delay:0.60s">
+<text x="34" y="339" font-size="12" font-weight="700" fill="#e6edf3">Redshift</text>
+<text x="210" y="339" font-size="12" font-weight="400" fill="#7d8896">warehouse</text>
+<text x="370" y="339" font-size="12" font-weight="400" fill="#e6edf3">legado, em migração pro ClickHouse</text>
+</g>
+<g class="row" style="animation-delay:0.65s">
+<rect x="21" y="346" width="818" height="22" fill="#121a26" opacity=".55"/>
+<text x="34" y="361" font-size="12" font-weight="700" fill="#e6edf3">dbt</text>
+<text x="210" y="361" font-size="12" font-weight="400" fill="#7d8896">transformação</text>
+<text x="370" y="361" font-size="12" font-weight="400" fill="#e6edf3">modelos SQL no ClickHouse</text>
+</g>
+<g class="row" style="animation-delay:0.70s">
+<text x="34" y="383" font-size="12" font-weight="700" fill="#e6edf3">Airflow 3</text>
+<text x="210" y="383" font-size="12" font-weight="400" fill="#7d8896">orquestração</text>
+<text x="370" y="383" font-size="12" font-weight="400" fill="#e6edf3">DAGs batch e cargas agendadas</text>
+</g>
+<g class="row" style="animation-delay:0.75s">
+<rect x="21" y="390" width="818" height="22" fill="#121a26" opacity=".55"/>
+<text x="34" y="405" font-size="12" font-weight="700" fill="#e6edf3">Terraform</text>
+<text x="210" y="405" font-size="12" font-weight="400" fill="#7d8896">IaC</text>
+<text x="370" y="405" font-size="12" font-weight="400" fill="#e6edf3">Lambdas, filas, IAM e alarmes</text>
+</g>
+<g class="row" style="animation-delay:0.80s">
+<text x="34" y="427" font-size="12" font-weight="700" fill="#e6edf3">GitLab CI</text>
+<text x="210" y="427" font-size="12" font-weight="400" fill="#7d8896">CI/CD</text>
+<text x="370" y="427" font-size="12" font-weight="400" fill="#e6edf3">build, testes e gate do Trivy</text>
+</g>
+<g class="row" style="animation-delay:0.85s">
+<rect x="21" y="434" width="818" height="22" fill="#121a26" opacity=".55"/>
+<text x="34" y="449" font-size="12" font-weight="700" fill="#e6edf3">CloudWatch</text>
+<text x="210" y="449" font-size="12" font-weight="400" fill="#7d8896">observação</text>
+<text x="370" y="449" font-size="12" font-weight="400" fill="#e6edf3">logs, métricas e investigação</text>
+</g>
+<g class="row" style="animation-delay:0.90s">
+<text x="34" y="471" font-size="12" font-weight="700" fill="#e6edf3">pytest</text>
+<text x="210" y="471" font-size="12" font-weight="400" fill="#7d8896">testes</text>
+<text x="370" y="471" font-size="12" font-weight="400" fill="#e6edf3">unitário e integração com moto</text>
+</g>
+<text x="20" y="502" font-size="11" fill="#7d8896">17 rows in set. Elapsed: <tspan fill="#e6edf3">0.004 sec.</tspan></text>
+</svg>
