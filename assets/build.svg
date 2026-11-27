@@ -6,7 +6,7 @@
   <rect x="16" y="11" width="12" height="12" rx="3" fill="#017cee"/>
   <rect x="19" y="14" width="6" height="6" rx="1.5" fill="#121a26"/>
   <text x="38" y="21.5" font-size="11"><tspan fill="#7d8896">henrike-pb</tspan><tspan fill="#4b5563">  /  </tspan><tspan fill="#7d8896">dbt</tspan><tspan fill="#4b5563">  /  </tspan><tspan fill="#e6edf3">build</tspan></text>
-  <text x="844" y="21.5" font-size="11" text-anchor="end" fill="#7d8896">2026-11-26</text>
+  <text x="844" y="21.5" font-size="11" text-anchor="end" fill="#7d8896">2026-11-27</text>
 <text x="20" y="54" font-size="11" fill="#7d8896">Running 14 models: <tspan fill="#2ea043">OK</tspan> = o que eu faço no trabalho · <tspan fill="#a3e635">RUN</tspan> = o que estou estudando</text>
 <g class="row" style="animation-delay:0.10s">
 <text x="20" y="84" font-size="11" fill="#4b5563">01 of 14</text>

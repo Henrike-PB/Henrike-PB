@@ -6,7 +6,7 @@
   <rect x="16" y="11" width="12" height="12" rx="3" fill="#017cee"/>
   <rect x="19" y="14" width="6" height="6" rx="1.5" fill="#121a26"/>
   <text x="38" y="21.5" font-size="11"><tspan fill="#7d8896">henrike-pb</tspan><tspan fill="#4b5563">  /  </tspan><tspan fill="#7d8896">clickhouse</tspan><tspan fill="#4b5563">  /  </tspan><tspan fill="#e6edf3">henrike.stack</tspan></text>
-  <text x="844" y="21.5" font-size="11" text-anchor="end" fill="#7d8896">2026-11-26</text>
+  <text x="844" y="21.5" font-size="11" text-anchor="end" fill="#7d8896">2026-11-27</text>
 <text x="20" y="56" font-size="12" fill="#7d8896"><tspan fill="#a3e635">:)</tspan> <tspan fill="#017cee">SELECT</tspan> <tspan fill="#e6edf3">stack, camada, uso</tspan> <tspan fill="#017cee">FROM</tspan> <tspan fill="#e6edf3">henrike.stack</tspan> <tspan fill="#017cee">WHERE</tspan> <tspan fill="#e6edf3">frequencia = </tspan><tspan fill="#5ec8f2">'diária'</tspan></text>
 <rect x="20" y="74" width="820" height="406" rx="6" fill="#0f141c" stroke="#243042"/>
 <line x1="20" y1="100" x2="840" y2="100" stroke="#243042"/>
